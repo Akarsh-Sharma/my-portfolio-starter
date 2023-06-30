@@ -5,9 +5,9 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      primary: 'Orbitron',
-      secondary: 'Rajdhani',
-      tertiary: 'Aldrich',
+      primary: ['Orbitron', 'sans-serif'],
+      secondary: ['Rajdhani', 'sans-serif'],
+      tertiary: ['Aldrich', 'sans-serif'],
     },
     container: {
       padding: {
