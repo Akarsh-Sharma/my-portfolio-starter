@@ -2,7 +2,7 @@ import React from 'react';
 // images
 import Image from '../assets/avatar.svg';
 // icons
-import { FaGithub, FaLinkedin, FaDribbble } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 // type animation
 import {TypeAnimation} from 'react-type-animation';
 // motion
@@ -17,7 +17,7 @@ const Banner = () => {
     <div className='container mx-auto'>
       <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
         {/* text */}
-        <div className='flex-1 text-center font-secondary lg:text-left'>
+        <div className='flex-1 text-center font-primary lg:text-left'>
           <motion.h1 
           variants={fadeIn('up', 0.3)} 
           initial="hidden" 
@@ -53,13 +53,9 @@ const Banner = () => {
           initial="hidden" 
           whileInView={'show'} 
           viewport={{once:false, amount:0.7}} 
-          className='text-[14px] mb-8 max-w-lg mx-auto lg:mx-0'>
-            Hi, my name is Akarsh and I am a passionate programmer with extensive experience in developing software 
-            using Object-Oriented Programming languages such as Java and C# as well as web development technologies 
-            such as HTML, JavaScript, and CSS. My experience with .NET allows me to develop robust and scalable applications for different platforms. Moreover, I have working knowledge of SQL and Microsoft SQL Server, 
-            which enables me to develop and maintain databases to support web applications. My ability to work with cross functional teams and communicate effectively allows me to 
-            deliver high-quality products that meet business objectives. I have a keen eye for detail and I am committed to staying up-to-date with the latest technologies and industry 
-            trends to continuously improve my skill set and provide innovative solutions.
+          className='text-[14px] mb-8 max-w-lg mx-auto lg:mx-0 lg:text-[20px]'>
+            Hey, my name is Akarsh and I am a Full Stack Developer with almost 3 years of experience. 
+            Welcome to my Portfolio! 
           </motion.p>
           <motion.div 
           variants={fadeIn('up', 0.3)} 
