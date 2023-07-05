@@ -8,6 +8,8 @@ import {useInView } from 'react-intersection-observer';
 import {motion} from 'framer-motion';
 // variant 
 import {fadeIn} from '../variant';
+import { Link } from 'react-scroll';
+
 
 
 const About = () => {
@@ -86,8 +88,12 @@ const About = () => {
               </div>
             </div>
             <div className='flex gap-x-8 items-center'>
+            <Link to='contact'>
               <button className='btn btn-lg'>Contact me</button>
-              <a href='#' className='text-gradient btn-link'> My Portfolio </a>
+            </Link>
+            <Link to='work'>
+              <a className='text-gradient btn-link'> My Portfolio </a>
+            </Link>
             </div>
           </motion.div>
         </motion.div>
