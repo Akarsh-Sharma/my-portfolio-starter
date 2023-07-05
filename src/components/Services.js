@@ -10,23 +10,19 @@ import {fadeIn} from '../variant';
 const services = [
   {
     name: 'UI/UX Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    link: 'Learn more'
+    description: 'Creating wireframes, user flows, and interactive prototypes to design intuitive and user-friendly interfaces that meet the needs of the target audience.',
   },
   {
-    name: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    link: 'Learn more'
+    name: 'Custom Software Development',
+    description: 'Developing tailored software solutions that address specific business needs and requirements.',
   },
   {
-    name: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    link: 'Learn more'
+    name: 'Full Stack Web Development',
+    description: 'Building web applications from scratch using front-end technologies like HTML, CSS, JavaScript, and popular frameworks such as React, Angular, or Vue.js, along with back-end technologies like Node.js, Python, Ruby, or PHP.',
   },
   {
-    name: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    link: 'Learn more'
+    name: 'Database Management',
+    description: 'Designing and implementing efficient and secure database structures using technologies like MySQL, PostgreSQL, MongoDB, or Firebase.',
   },
 ]
 
@@ -71,15 +67,6 @@ const Services = () => {
                     <h4 className='text-[20px] tracking-wider font-primary
                     font-semibold mb-6'>{name}</h4>
                     <p className='font-secondary leading-tight'>{description}</p>
-                  </div>
-                  <div className='flex flex-col flex-1 items-end'>
-                    <a href='#' className='btn w-9 h-9 mb-[42px] flex justify-center
-                    items-center'>
-                      <BsArrowUpRight/>
-                    </a>
-                    <a href='#' className='text-gradient text-sm '>
-                      {link}
-                    </a>
                   </div>
                 </div>
                 );

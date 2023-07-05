@@ -9,9 +9,27 @@ import {TypeAnimation} from 'react-type-animation';
 import {motion} from 'framer-motion';
 // variants 
 import {fadeIn} from '../variant';
+import { Link } from 'react-scroll';
+
 
 
 const Banner = () => {
+
+  const SOCIAL = [
+     
+    {
+        id: 1,
+        link: "https://github.com/Akarsh-Sharma",
+        icon: <FaGithub/>
+    },
+    {
+        id: 2,
+        link: "https://www.linkedin.com/in/akarsh-sharma/",
+        icon: <FaLinkedin/>
+    }
+];
+
+
   return (
   <section className='mt-12 min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
     <div className='container mx-auto'>
@@ -63,8 +81,12 @@ const Banner = () => {
           whileInView={'show'} 
           viewport={{once:false, amount:0.7}} 
           className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-            <button className='btn btn-lg'>Contact me</button>
-            <a href='#' className='text-gradient btn-link'> My Portfolio </a>
+            <Link to='contact'>
+              <button className='btn btn-lg'>Contact me</button>
+            </Link>
+            <Link to='work'>
+              <a className='text-gradient btn-link'> My Portfolio </a>
+            </Link>
           </motion.div>
           {/* socials */}
           <motion.div 
@@ -73,10 +95,10 @@ const Banner = () => {
           whileInView={'show'} 
           viewport={{once:false, amount:0.8}} 
           className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-            <a href='#' className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
+            <a href={SOCIAL[0].link} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
               <FaGithub/>
             </a>
-            <a href='#' className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
+            <a href={SOCIAL[1].link} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
               <FaLinkedin/>
             </a>
           </motion.div>

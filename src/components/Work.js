@@ -7,6 +7,7 @@ import {fadeIn} from '../variant';
 import Img1 from '../assets/portfolio-img1.png';
 import Img2 from '../assets/portfolio-img2.png';
 import Img3 from '../assets/portfolio-img3.png';
+import { Link } from 'react-scroll';
 
 
 
@@ -30,7 +31,9 @@ const Work = () => {
             <p className='max-w-sm mb-16'>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, 
                consectetur adipiscing elit
             </p>
-            <button className='btn btn-sm'> View all projects</button>
+            <a href='https://github.com/Akarsh-Sharma'>
+              <button className='btn btn-sm'> View all projects</button>
+            </a>
           </div>
           {/* image bottom left */}
            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'> 
